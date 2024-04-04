@@ -404,19 +404,27 @@ Description: Suggestion Submition
 
 ### Example of Body Request 
 ```
-{
-    "report": {
-        "id": 1,
+[
+    "suggestion": {
+        "id": 1 ,
         "reporterId": 123,
-        "reportType": "Type A",
-        "reportDescription": "Description of the report",
-        "reportLocation": "Location of the report"
-        "createAt: date of task creation "
-    },
-    "image": "<base64-encoded image data>"
-}
+        "suggestionTitle": "Suggestion title",
+        "suggestionDescription": "Description of the suggestion",
+        "creatAt": "date of suggestion creation"
+      
+    }
+    
 ```
 
+```
+report created successfully
+```
+
+### Response of Reqeust
+
+```
+Suggestion saved succesffully 
+```
   
 </details>
 
