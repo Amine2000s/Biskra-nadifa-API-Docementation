@@ -10,13 +10,17 @@ Welcome to Biskra nadifa API Documentation! this Documentation is Specially made
   - Citizen
     
 in each API section we will display the information of the Actor and it's Actions, Enjoy!
-this API is for Dashboard Users, its allows it's Users to return main Data of what the dahsboard user needs, such as retreival of all (Tasks, Suggestions,Reports, Availlable Truck Drivers and so on)    
+
 currently the API's is not deployed so the Endpoint will like kind of this format: 
 localhost:[your selected port]/dashboard
 **if you are using the default spring boot app , the port will be one 8081 , so the Endpoint will look like this : localhost:8081/dashboard** 
                                                                                                                                               
- ## Dashboard API
-
+<details>
+  <summary><h2> Dashboard API </h2> 
+  </summary>
+  
+  this API covers the necessary Operation for the Dashboard Users such as retreival of all (Tasks, Suggestions,Reports, Availlable Truck Drivers and so on)  
+ 
 ### Get all reports 
 Get all reports  
 Endpoint: /dashboard/reports  
@@ -274,13 +278,14 @@ Description: Retrieves a list of all citizens.
     }
 ]
 ```
+</details>
 
 
-
-
-## Driver API
- 
-  >this API is for Truck Drivers, it allows them to retrieve the list of all assinged tasks to them , as well as Update the status of their tasks 
+<details>
+  <summary>
+    <h2>Driver API</h2>
+  </summary>
+   this API is for Truck Drivers, it allows them to retrieve the list of all assinged tasks to them , as well as Update the status of their tasks 
   
   ### Get all Assigned Tasks 
 Endpoint: /drivers/{driverId}/tasks \
@@ -362,6 +367,57 @@ taskId = id of the task
 ```
 task update status operation done with success
 ````
+</details>
 
-## Citizen API 
+
+
+<details>
+  <summary>
+    <h2>
+      Citizen API 
+    </h2>
+  </summary>
+  
+### Submit a Report
+Endpoint: /citizens/report
+Method: Post
+Description: report Submission
+
+### Example of Body Request 
+```
+{
+    "report": {
+        "id": 1,
+        "reporterId": 123,
+        "reportType": "Type A",
+        "reportDescription": "Description of the report",
+        "reportLocation": "Location of the report"
+        "createAt: date of task creation "
+    },
+    "image": "<base64-encoded image data>"
+}
+```
+### Submit a Suggestion
+Endpoint: /citizens/suggestion
+Method: Post
+Description: Suggestion Submition
+
+### Example of Body Request 
+```
+{
+    "report": {
+        "id": 1,
+        "reporterId": 123,
+        "reportType": "Type A",
+        "reportDescription": "Description of the report",
+        "reportLocation": "Location of the report"
+        "createAt: date of task creation "
+    },
+    "image": "<base64-encoded image data>"
+}
+```
+
+  
+</details>
+
 
