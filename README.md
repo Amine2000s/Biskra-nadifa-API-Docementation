@@ -13,7 +13,7 @@ in each API section we will display the information of the Actor and it's Action
 this API is for Dashboard Users, its allows it's Users to return main Data of what the dahsboard user needs, such as retreival of all (Tasks, Suggestions,Reports, Availlable Truck Drivers and so on)    
 currently the API's is not deployed so the Endpoint will like kind of this format: 
 localhost:[your selected port]/dashboard
-**if you are using the default spring boot app , the port will be one 8081 , so the Endpoint will look like this : localhost:8081/dashboard**  <br>
+**if you are using the default spring boot app , the port will be one 8081 , so the Endpoint will look like this : localhost:8081/dashboard** 
                                                                                                                                               
  ## Dashboard API
 
