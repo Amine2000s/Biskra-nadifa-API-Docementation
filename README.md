@@ -10,10 +10,7 @@ Welcome to Biskra nadifa API Documentation! this Documentation is Specially made
   - Citizen
     
 in each API section we will display the information of the Actor and it's Actions, Enjoy!
-
-
- ## Dashboard API 
-
+ ## Dashboard API
 this API is for Dashboard Users, its allows it's Users to return main Data of what the dahsboard user needs, such as retreival of all (Tasks, Suggestions,Reports, Availlable Truck Drivers and so on)    
 currently the API's is not deployed so the Endpoint will like kind of this format: 
 localhost:[your selected port]/dashboard
