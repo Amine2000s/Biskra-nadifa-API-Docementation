@@ -280,11 +280,10 @@ Description: Retrieves a list of all citizens.
 
 
 
-<details>
-  <summary>
-    <h2>Driver API</h2>
-  </summary>
-  <br>this API is for Truck Drivers, it allows them to retrieve the list of all assinged tasks to them , as well as Update the status of their tasks </br>
+
+## Driver API
+ 
+  >this API is for Truck Drivers, it allows them to retrieve the list of all assinged tasks to them , as well as Update the status of their tasks 
   
   ### Get all Assigned Tasks 
 Endpoint: /drivers/{driverId}/tasks \
